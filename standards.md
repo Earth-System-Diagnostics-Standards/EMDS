@@ -154,7 +154,7 @@ DEM output can be logged to stdout or stderr. Both outputs may not be displayed 
 Output must be accompanied by a JSON file describing what is present in the output directory. It is recommended that the DEM has defaults in place for circumstances where observation or model metadata is missing.
 
 Base level keys (at least one should be specified):
-|      |      |
+| Key | Definition |
 |------|------|
 | index | Short name of the plot/html/metric that should be opened when the user chooses to “open” the output bundle. |
 | provenance | Command line and version information used to execute the DEM. This includes environment variables and the observational datasets used (including dataset versions).  |
