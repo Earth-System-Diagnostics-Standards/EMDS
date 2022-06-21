@@ -256,38 +256,26 @@ The base-level key DIMENSIONS is required to contain at least one sub-key json_s
 
 One formatting option (similar to what ILAMB uses) allows users to specify the index names of the innermost statistic dimensions. The “indices” element would be an array with a list of values corresponding to the different indices. DEM creators can also specify a dictionary of short names so that the full name of each dimension does not need to be repeated in the results section.
 
-In the following example of the DIMENSIONS key (from the PCMDI Metrics Package), required fields are shown in black and additional, optional metadata is shown in red:
+The following is an example of the DIMENSIONS key from the PCMDI Metrics Package output. The required field is DIMENSIONS:json_structure. The other metadata fields shown are optional.
 ``` 
 "DIMENSIONS": {
-"json_structure": [
+    "json_structure": [
         "region",
-"model",
-        "metric",
-        "statistic"
-],
-"statistic": {
-    "indices": [
-        "Overall Score",
-        "Seasonal Cycle Score"
-    ],
-    "short_names": {
-        "os": "Overall Score",
-        "scs": "Seasonal Cycle Score"
-    },    
-    },
+        "model",
+        "metric"
+    ]
     "metric": {
-"rms_xyt": {
-"Name": "Spatio-Temporal Root Mean Square",
-"Abstract": "Compute Spatial and Temporal Root Mean Square",
-"URI": "http://uvcdat.llnl.gov/documentation/utilities/utilities-2.html",
-"Contact": "pcmdi-metrics@llnl.gov"
-},
+        "rms_xyt": {
+            "Name": "Spatio-Temporal Root Mean Square",
+            "Abstract": "Compute Spatial and Temporal Root Mean Square",
+            "URI": "http://uvcdat.llnl.gov/documentation/utilities/utilities-2.html"
+        },
     },
     "region": {
         "Global": {},
         "TROPICS": {
-                "generator": "cdutil.region.domain(latitude=(-30.0, 30))"
-            }
+            "generator": "cdutil.region.domain(latitude=(-30.0, 30))"
+        }
     }
 },
 ```
