@@ -72,7 +72,7 @@ Under the settings key, the following key/value pairs are specified:
 The varlist specifies the variables that are needed from the model data.  Each entry in the list requests one or more model datasets for a given variable.  Required varlist keys:
 | Key  | Definition |
 |------|------------|
-| var_name | This should be one of the CF (version 1.7) standard names (http://cfconventions.org/standard-names.html), or an abbreviation used in CMOR 3.5 (see tables in https://github.com/PCMDI/cmor/tree/master/TestTables). If the name exists The variable must be scalar-valued: for example, (u,v,w) wind velocity components should be requested as three separate entries. If the module requires non-standard data that can be computed from CF variables (e.g., column integrated water vapor), the module should perform that computation internally.  |
+| var_name | This should be one of the CF (version 1.7) [standard names](http://cfconventions.org/standard-names.html), or an abbreviation used in CMOR 3.5 (see [CMIP6-CMOR Tables](https://github.com/PCMDI/cmip6-cmor-tables/tree/master/Tables)). If the name exists the variable must be scalar-valued: for example, (u,v,w) wind velocity components should be requested as three separate entries. If the module requires non-standard data that can be computed from CF variables (e.g., column integrated water vapor), the module should perform that computation internally.  |
 | units |  A UDUnits-compatible string specifying the variable's units. If not provided, the CF convention's canonical units will be assumed.  |
 | frequency | This should be one of the CMOR3.5 values. The frequency value should include information about sampling or averaging frequencies. Use “any” if any frequency is acceptable. |
 | z_levels | (optional) If applicable to the variable, a list of one or more integers or floats specifying the vertical slice to extract; or this can be “column integral” for vertically-integrated quantities. |
@@ -92,7 +92,7 @@ The coordinates keys specify ranges of acceptable time and spatial resolution:
 | Key  | Definition |
 |------|------------|
 | min_time_range<br>max_time_range | (optional) CMOR3.5 or UDUnits-compatible strings specifying the minimum and/or maximum length of analysis period the DEM requires. For example, a DEM that uses monthly data may need to set a minimum time range in order to guarantee it has enough data to compute statistically meaningful results. If this is not specified, any time duration is allowed. |
-| min_resolution<br>max_resolution  | (optional) Should be one of the CMIP6 nominal_resolution values, with "nominal resolution" defined as in the CMIP6 Global Attributes document (http://goo.gl/v1drZl). These specify the minimum and/or maximum spatial resolution the DEM’s data should have for the DEM to produce meaningful results. If this is not specified, any resolution is allowed. |
+| min_resolution<br>max_resolution  | (optional) Should be one of the CMIP6 nominal_resolution values, with "nominal resolution" defined as in the [CMIP6 Global Attributes document](http://goo.gl/v1drZl). These specify the minimum and/or maximum spatial resolution the DEM’s data should have for the DEM to produce meaningful results. If this is not specified, any resolution is allowed. |
 
 <p>&nbsp;</p>
 
