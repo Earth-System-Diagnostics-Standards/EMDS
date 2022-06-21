@@ -47,7 +47,7 @@ Documentation is needed for DEM dependencies on specific Python module or versio
 
 The completed DEM should be registered with one or more Digital Object Identifiers (DOIs). This also applies to PODs that are merged into the MDTF framework. A service such as Zenodo can be used to obtain DOIs for software. 
 
-At a minimum, the DEM should have a "concept" DOI that applies to any and all version of the software. The DEM may also have version specific DOIs. If a POD has version DOIs, it should have a version DOI specific to the version that is merged into the MDTF source code.
+At a minimum, the DEM should have a "concept" DOI that applies to any and all version of the software. The DEM may also have version specific DOIs. If a POD has version specific DOIs, it should have a version DOI for the version that is merged into the MDTF source code.
 
 
 ## DEM Framework File Format <a name="demframework"></a>
