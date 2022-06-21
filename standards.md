@@ -34,9 +34,9 @@ If compiled code is used, a robust build system should be provided.  Compiled co
 ### Python version
 Official support (fixing bugs) of python 2.7 will end on January 1, 2020.  
 
-The framework will support Python >= 3.6 (version 3.6 set by the asyncio module) and, as resources permit, version 2.7.  
+The framework will support Python >= 3.7 and, as resources permit, version 2.7.  
 
-Funded development of new DEMs should be in Python >= 3.6.  
+Funded development of new DEMs should be in Python >= 3.7.  
 
 If there's no demonstrated user demand, python 2.7 support will be dropped in the near future.  
 
