@@ -9,7 +9,10 @@ Aparna Radhakrishnan, Princeton University/NOAA Geophysical Fluid Dynamics Labor
 
 ## Table of Contents
 1. [Best Practices](#bestpractices)
-2. [Digital Object Identification](#doi)
+    1. [Nomenclature](#nomenclature)
+    2. [Supported Languages](#languages)
+    3. [Python Versions](#py_version)
+    4. [Digital Object Identification](#doi)
 3. [DEM Framework File Format](#demframework)
     1. [Settings file](#settingsfile)
     2. [Contents file](#contentsfile)
@@ -24,15 +27,15 @@ Aparna Radhakrishnan, Princeton University/NOAA Geophysical Fluid Dynamics Labor
 
 ## Best Practices <a name="bestpractices"></a>
 
-### Nomenclature 
+### Nomenclature <a name="nomenclature"></a>
 In this document we refer to [MDTF](https://mdtf-diagnostics.readthedocs.io/en/latest/index.html) process-oriented diagnostics (PODs) and [CMEC](https://cmec.llnl.gov) metric kernels (MKs) as data evaluation modules (DEMs).
 
-### Supported Languages
+### Supported Languages <a name="languages"></a>
 Python is the preferred language for development. However, there are certain cases where Python may not be performant or may not have the requisite functionality (i.e. certain statistical analysis routines). Nonetheless, if the kernel evaluation routines are not in python, python interfaces should be provided for accessing the functionality of the kernel.  
 
 If compiled code is used, a robust build system should be provided.  Compiled code should minimally rely on third-party dependencies and/or should be available through a conda package.
 
-### Python version
+### Python version <a name="py_version"></a>
 Official support (fixing bugs) of python 2.7 will end on January 1, 2020.  
 
 The framework will support Python >= 3.7 and, as resources permit, version 2.7.  
@@ -43,11 +46,11 @@ If there's no demonstrated user demand, python 2.7 support will be dropped in th
 
 Documentation is needed for DEM dependencies on specific Python module or version of a Python module (e.g. Numpy>=12.0.0) 
 
-## Digital Object Identification <a name="doi"></a>
+### Digital Object Identification <a name="doi"></a>
 
 The completed DEM should be registered with one or more Digital Object Identifiers (DOIs). This also applies to PODs that are merged into the MDTF framework. A service such as Zenodo can be used to obtain DOIs for software. 
 
-At a minimum, the DEM should have a "concept" DOI that applies to any and all version of the software. The DEM may also have version specific DOIs. If a POD has version specific DOIs, it should have a version DOI for the version that is merged into the MDTF source code.
+At a minimum, the DEM should have a "concept" DOI that applies to any and all version of the software. The DEM may also have version specific DOIs. If a POD has version specific DOIs, it should have a DOI for the version that is merged into the MDTF source code.
 
 
 ## DEM Framework File Format <a name="demframework"></a>
