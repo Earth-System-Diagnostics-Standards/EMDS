@@ -254,8 +254,6 @@ The expected format of the common model evaluation metric output file is JSON. T
 
 The base-level key DIMENSIONS is required to contain at least one sub-key json_structure which is a list of dimensions used in this file for organizing metric information, arranged in a hierarchical order. The order chosen is at the discretion of the model evaluation package developer. Optional metadata can be provided to describe dimensions such as “region” or “season”.
 
-One formatting option (similar to what ILAMB uses) allows users to specify the index names of the innermost statistic dimensions. The “indices” element would be an array with a list of values corresponding to the different indices. DEM creators can also specify a dictionary of short names so that the full name of each dimension does not need to be repeated in the results section.
-
 The following is an example of the DIMENSIONS key from the PCMDI Metrics Package output. The required field is DIMENSIONS:json_structure. The other metadata fields shown are optional.
 ``` 
 "DIMENSIONS": {
