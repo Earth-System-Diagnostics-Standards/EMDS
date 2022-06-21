@@ -9,14 +9,15 @@ Aparna Radhakrishnan, Princeton University/NOAA Geophysical Fluid Dynamics Labor
 
 ## Table of Contents
 1. [Best Practices](#bestpractices)
-2. [DEM Framework File Format](#demframework)
+2. [Digital Object Identification](#doi)
+3. [DEM Framework File Format](#demframework)
     1. [Settings file](#settingsfile)
     2. [Contents file](#contentsfile)
-3. [Runtime Environment](#runtimeenvironment)
-4. [Common Output Bundle Format](#commonoutput)
-5. [Observational Data Format](#obsdataformat)
-6. [Observational Data Server](#obsdataserver)
-7. [Common Metric Output Format](#commonmetric)
+4. [Runtime Environment](#runtimeenvironment)
+5. [Common Output Bundle Format](#commonoutput)
+6. [Observational Data Format](#obsdataformat)
+7. [Observational Data Server](#obsdataserver)
+8. [Common Metric Output Format](#commonmetric)
     1. [DIMENSIONS](#dimensions)
     2. [RESULTS](#results)
 
@@ -41,6 +42,13 @@ Funded development of new DEMs should be in Python >= 3.7.
 If there's no demonstrated user demand, python 2.7 support will be dropped in the near future.  
 
 Documentation is needed for DEM dependencies on specific Python module or version of a Python module (e.g. Numpy>=12.0.0) 
+
+## Digital Object Identification <a name="doi"></a>
+
+The completed DEM should be registered with one or more Digital Object Identifiers (DOIs). This also applies to PODs that are merged into the MDTF framework. A service such as Zenodo can be used to obtain DOIs for software. 
+
+At a minimum, the DEM should have a "concept" DOI that applies to any and all version of the software. The DEM may also have version specific DOIs. If a POD has version DOIs, it should have a version DOI specific to the version that is merged into the MDTF source code.
+
 
 ## DEM Framework File Format <a name="demframework"></a>
 
