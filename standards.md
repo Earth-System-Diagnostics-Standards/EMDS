@@ -24,7 +24,7 @@ Aparna Radhakrishnan, Princeton University/NOAA Geophysical Fluid Dynamics Labor
 ## Best Practices <a name="bestpractices"></a>
 
 ### Nomenclature 
-In this document we refer to MDTF process-oriented diagnostics (PODs) and CMEC metric kernels (MKs) as data evaluation modules (DEMs).
+In this document we refer to [MDTF](https://mdtf-diagnostics.readthedocs.io/en/latest/index.html) process-oriented diagnostics (PODs) and [CMEC](https://cmec.llnl.gov) metric kernels (MKs) as data evaluation modules (DEMs).
 
 ### Supported Languages
 Python is the preferred language for development. However, there are certain cases where Python may not be performant or may not have the requisite functionality (i.e. certain statistical analysis routines). Nonetheless, if the kernel evaluation routines are not in python, python interfaces should be provided for accessing the functionality of the kernel.  
