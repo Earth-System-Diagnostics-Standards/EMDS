@@ -1,10 +1,14 @@
 # Earth System Metrics and Diagnostics Standards
 
 ## Author list
-Ana Ordonez, Lawrence Livermore National Laboratory  
+Dani Coleman, National Center for Atmospheric Research
 Tom Jackson, NOAA Geophysical Fluid Dynamics Laboratory  
-Paul Ullrich, University of California Davis    
-Aparna Radhakrishnan, Princeton University/NOAA Geophysical Fluid Dynamics Laboratory
+John Krasting, NOAA Geophysical Fluid Dynamics Laboratory  
+Yi-Hung Kuo, University of California Los Angeles
+Jessica Liptak, NOAA Geophysical Fluid Dynamics Laboratory    
+Ana Ordonez, Lawrence Livermore National Laboratory   
+Aparna Radhakrishnan, Princeton University/NOAA Geophysical Fluid Dynamics Laboratory  
+Paul Ullrich, University of California Davis   
 
 
 ## Table of Contents
