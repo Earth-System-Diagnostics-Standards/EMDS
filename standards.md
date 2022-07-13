@@ -238,7 +238,7 @@ The version subdirectory must contain a metadata descriptor file for the observa
 
 <p>&nbsp;</p>
 
-A version directory should also contain the script used to postprocess the undigested data that is used. sHistorical versions are useful for provenance and reproducibility, and so should be maintained to the extent possible.
+A version directory should also contain the script used to postprocess the undigested data that is used. Historical versions are useful for provenance and reproducibility, and so should be maintained to the extent possible.
 
 Post-processed observational data can be subsetted by time period or geography. The subset period  should be documented in the metadata descriptor file.
 
