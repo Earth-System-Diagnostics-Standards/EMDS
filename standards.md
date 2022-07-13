@@ -1,4 +1,4 @@
-# Earth System Metrics and Diagnostics Standards
+# Earth System Metrics and Diagnostics Standards (EMDS)
 
 ## Author list
 Authors are presented in order of last name:  
