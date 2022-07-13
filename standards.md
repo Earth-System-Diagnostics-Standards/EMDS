@@ -153,7 +153,7 @@ Output from DEMs should only be written to *_WK_DIR. Any intermediate files not 
 
 Temporary files, if needed, can be written to the working directory, preferably in the “temp” subfolder. This directory should be removed once execution is completed successfully.  
 
-As a best practice, DEMs should not attempt to open network connections or access resources on remote hosts.  
+DEMs should not attempt to open network connections or access resources on remote hosts.  
 
 DEM output can be logged to stdout or stderr. Both outputs may not be displayed to the user directly, but will be logged to a run log.
 
