@@ -256,7 +256,7 @@ Downloading of a particular observational dataset would then simply require down
 
 Here we describe the common format for metric information calculated by DEMs. The output file format described herein is designed to allow for easy visualization and interaction within the CMEC visualization module.
 
-The expected format of the common model evaluation metric output file is JSON. This format allows for the file to be easily parsed and analyzed in the JavaScript-based visualization module. The required base-level keys are DIMENSIONS, and RESULTS. Optional keys are PROVENANCE, DISCLAIMER, and NOTES, along with any other keys required by the DEM.
+The expected format of the common model evaluation metric output file is JSON. This format allows for the file to be easily parsed and analyzed in web-based tools, and many programming languages support JSON parsing. The required base-level keys are DIMENSIONS, and RESULTS. Optional keys are PROVENANCE, DISCLAIMER, and NOTES, along with any other keys required by the DEM.
  
 ### DIMENSIONS <a name="dimensions"></a>
 
