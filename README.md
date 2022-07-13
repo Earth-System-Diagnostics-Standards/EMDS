@@ -1,6 +1,6 @@
 # Earth System Metrics and Diagnostics Standards (EMDS)
 
-The Earth System Metrics and Diagnostics Standards provide guidance for the design of Earth system model evaluation software. There are requirements for the software interface, metadata, and metrics output format that are designed to promote interoperability of software packages and reproducibility of results. 
+The Earth System Metrics and Diagnostics Standards serve as a guidance document for the design of Earth system metrics and diagnostics based software utilities. The standards document provides requirements for software interfaces, metadata, and metrics output format that are designed to promote the interoperability of software packages and reproducibility of results.  
 
 ## Standards document
 The Earth System Metrics and Diagnostics Standards can be accessed in this repository at [standards.md](standards.md). 
