@@ -32,23 +32,12 @@ Paul Ullrich, University of California Davis
 ## Best Practices <a name="bestpractices"></a>
 
 ### Nomenclature 
-In this document we refer to [MDTF](https://mdtf-diagnostics.readthedocs.io/en/latest/index.html) process-oriented diagnostics (PODs) and [CMEC](https://cmec.llnl.gov) metric kernels (MKs) as data evaluation modules (DEMs).
+In this document we refer to [MDTF](https://mdtf-diagnostics.readthedocs.io/en/latest/index.html) process-oriented diagnostics (PODs) and [CMEC](https://cmec.llnl.gov) metric kernels (MKs) as data evaluation modules (DEMs). A workflow within the DEM which has its own settings JSON is referred to as a configuration.
 
 ### Supported Languages
-Python is the preferred language for development. However, there are certain cases where Python may not be performant or may not have the requisite functionality (i.e. certain statistical analysis routines). Nonetheless, if the kernel evaluation routines are not in python, python interfaces should be provided for accessing the functionality of the kernel.  
+It is recommended that DEMs are developed in languages that are portable, flexible, and unrestricted. Python generally meets these requirements, and frameworks based on the EMDS standards may require the use of Python. That being said, any routine that enables command line execution of the DEM (with a single executable driver script per configuration; see "DEM Framework File Format: Settings file" below) can be made to work under these standards.
 
 If compiled code is used, a robust build system should be provided.  Compiled code should minimally rely on third-party dependencies and/or should be available through a conda package.
-
-### Python version
-Official support (fixing bugs) of python 2.7 will end on January 1, 2020.  
-
-The framework will support Python >= 3.7 and, as resources permit, version 2.7.  
-
-Funded development of new DEMs should be in Python >= 3.7.  
-
-If there's no demonstrated user demand, python 2.7 support will be dropped in the near future.  
-
-Documentation is needed for DEM dependencies on specific Python module or version of a Python module (e.g. Numpy>=12.0.0) 
 
 ## DEM Framework File Format <a name="demframework"></a>
 
