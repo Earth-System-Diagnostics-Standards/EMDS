@@ -165,7 +165,7 @@ Base level keys (at least one should be specified):
 Required provenance keys:
 | Key  | Definition |
 |------|------------|
-| environment | Key/value pairs listing important packages in the run environment and their version. |
+| environment | Key/value pairs listing all relevant diagnostic and framework environment variables. |
 | modeldata | Path to the model data used in this analysis. |
 | obsdata | Key/value pairs containing short names and versions of all observational datasets used. |
 | log | Filename of a free format log file written during execution. |
