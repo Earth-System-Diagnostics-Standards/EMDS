@@ -1,4 +1,4 @@
-# Earth System Metrics and Diagnostics Standards
+# Earth System Metrics and Diagnostics Standards (EMDS)
 
 ## Author list
 Authors are presented in order of last name:  
@@ -35,24 +35,14 @@ Paul Ullrich, University of California Davis
 
 ## Best Practices <a name="bestpractices"></a>
 
-### Nomenclature <a name="nomenclature"></a>
-In this document we refer to [MDTF](https://mdtf-diagnostics.readthedocs.io/en/latest/index.html) process-oriented diagnostics (PODs) and [CMEC](https://cmec.llnl.gov) metric kernels (MKs) as data evaluation modules (DEMs).
+### Nomenclature 
+In this document we refer to [MDTF](https://mdtf-diagnostics.readthedocs.io/en/latest/index.html) process-oriented diagnostics (PODs) and [CMEC](https://cmec.llnl.gov) metric kernels (MKs) as data evaluation modules (DEMs). A workflow within the DEM which has its own settings JSON is referred to as a configuration.
 
-### Supported Languages <a name="languages"></a>
-Python is the preferred language for development. However, there are certain cases where Python may not be performant or may not have the requisite functionality (i.e. certain statistical analysis routines). Nonetheless, if the kernel evaluation routines are not in python, python interfaces should be provided for accessing the functionality of the kernel.  
+### Supported Languages
+It is recommended that DEMs are developed in languages that are portable, flexible, and unrestricted. Python generally meets these requirements, and frameworks based on the EMDS standards may require the use of Python. That being said, any routine that enables command line execution of the DEM (with a single executable driver script per configuration; see "DEM Framework File Format: Settings file" below) can be made to work under these standards.
 
 If compiled code is used, a robust build system should be provided.  Compiled code should minimally rely on third-party dependencies and/or should be available through a conda package.
 
-### Python version <a name="py_version"></a>
-Official support (fixing bugs) of python 2.7 will end on January 1, 2020.  
-
-The framework will support Python >= 3.7 and, as resources permit, version 2.7.  
-
-Funded development of new DEMs should be in Python >= 3.7.  
-
-If there's no demonstrated user demand, python 2.7 support will be dropped in the near future.  
-
-Documentation is needed for DEM dependencies on specific Python module or version of a Python module (e.g. Numpy>=12.0.0) 
 
 ### Digital Object Identification <a name="doi"></a>
 
@@ -84,7 +74,7 @@ Under the settings key, the following key/value pairs are specified:
 | driver | The name of the top-level script (entry point) to call to start running the module. This should be a file path relative to the DEM’s code directory. |
 | async | (optional) An indicator that this module is executed asynchronously. Asynchronous modules should provide a status message on complete. |
 | long_name | A human readable name of module or configuration. |
-| description | A few sentences to describe the module or configuration. |
+| description | A few sentences to describe the module or configuration and its potential applications. |
 | runtime | A list of either names or key-value tables specifying the executables and third-party libraries (modules, packages, ...) required to run all code in the module, specified as follows: <br> a. The names or keys in the list are the names of executable programs needed, in version-string format (described below). <br>b. The values associated with the keys are a list of third-party libraries for that language (as named in that language's library repository), again in version-string format. Only libraries not included as part of that language's standard installation need to be listed. <br>c. The format for version strings is one of '(name)', '(name)==(version)', '(name)>=(version)' or '(name)<=(version)'. Both (name) and (version) may be arbitrary strings (not containing =, < or >). |
 | selftest_script | (optional) This should be a UNIX command-line string, to be executed in the module’s code directory, which runs a script to perform any automated tests of the module’s code. <br>a. Module authors are encouraged to write unit and integration tests for their code in order to simplify debugging and maintenance. <br>b. The executable and any libraries required to run the script should be included in the runtime specification above. This includes UNIX shells. <br>c. The test script will run in the environment specified in “Runtime Environment” below, except for the model data features. In particular, the script may access files in the DEM’s code and observational data folders. <br>d. The test script should not assume the DEM has access to the example model data. <br>e. The test script should obey all the restrictions in the "Running the DEM" section. <br>f. The test script should return exit code 0 only if all tests pass, and != 0 otherwise. All output should be written to either stdout or stderr. |
 
@@ -166,7 +156,7 @@ Output from DEMs should only be written to *_WK_DIR. Any intermediate files not 
 
 Temporary files, if needed, can be written to the working directory, preferably in the “temp” subfolder. This directory should be removed once execution is completed successfully.  
 
-As a best practice, DEMs should not attempt to open network connections or access resources on remote hosts.  
+DEMs should not attempt to open network connections or access resources on remote hosts.  
 
 DEM output can be logged to stdout or stderr. Both outputs may not be displayed to the user directly, but will be logged to a run log.
 
@@ -189,7 +179,7 @@ Base level keys (at least one should be specified):
 Required provenance keys:
 | Key  | Definition |
 |------|------------|
-| environment | Key/value pairs listing all relevant environment variables. |
+| environment | Key/value pairs listing all relevant diagnostic and framework environment variables. |
 | modeldata | Path to the model data used in this analysis. |
 | obsdata | Key/value pairs containing short names and versions of all observational datasets used. |
 | log | Filename of a free format log file written during execution. |
@@ -251,9 +241,9 @@ The version subdirectory must contain a metadata descriptor file for the observa
 
 <p>&nbsp;</p>
 
-A version directory should also contain the script used to postprocess the undigested data that is used. sHistorical versions are useful for provenance and reproducibility, and so should be maintained to the extent possible.
+A version directory should also contain the script used to postprocess the undigested data that is used. Historical versions are useful for provenance and reproducibility, and so should be maintained to the extent possible.
 
-Post-processed observational data can be subsetted by time period or geography. The subset period  should be documented in the metadata descriptor file.
+Post-processed observational data can be subsetted by time period or geography. The subset period should be documented in the metadata descriptor file.
 
 ## Observational Data Server <a name="obsdataserver"></a>
 
@@ -269,46 +259,32 @@ Downloading of a particular observational dataset would then simply require down
 
 Here we describe the common format for metric information calculated by DEMs. The output file format described herein is designed to allow for easy visualization and interaction within the CMEC visualization module.
 
-The expected format of the common model evaluation metric output file is JSON. This format allows for the file to be easily parsed and analyzed in the JavaScript-based visualization module. The required base-level keys are DIMENSIONS, and RESULTS. Optional keys are PROVENANCE, DISCLAIMER, and NOTES, along with any other keys required by the DEM.
+The expected format of the common model evaluation metric output file is JSON. This format allows for the file to be easily parsed and analyzed in web-based tools, and many programming languages support JSON parsing. The required base-level keys are DIMENSIONS, and RESULTS. Optional keys are PROVENANCE, DISCLAIMER, and NOTES, along with any other keys required by the DEM.
  
 ### DIMENSIONS <a name="dimensions"></a>
 
 The base-level key DIMENSIONS is required to contain at least one sub-key json_structure which is a list of dimensions used in this file for organizing metric information, arranged in a hierarchical order. The order chosen is at the discretion of the model evaluation package developer. Optional metadata can be provided to describe dimensions such as “region” or “season”.
 
-One formatting option (similar to what ILAMB uses) allows users to specify the index names of the innermost statistic dimensions. The “indices” element would be an array with a list of values corresponding to the different indices. DEM creators can also specify a dictionary of short names so that the full name of each dimension does not need to be repeated in the results section.
-
-In the following example of the DIMENSIONS key (from the PCMDI Metrics Package), required fields are shown in black and additional, optional metadata is shown in red:
+The following is an example of the DIMENSIONS key from the PCMDI Metrics Package output. The required field is DIMENSIONS:json_structure. The other metadata fields shown are optional.
 ``` 
 "DIMENSIONS": {
-"json_structure": [
+    "json_structure": [
         "region",
-"model",
-        "metric",
-        "statistic"
-],
-"statistic": {
-    "indices": [
-        "Overall Score",
-        "Seasonal Cycle Score"
-    ],
-    "short_names": {
-        "os": "Overall Score",
-        "scs": "Seasonal Cycle Score"
-    },    
-    },
+        "model",
+        "metric"
+    ]
     "metric": {
-"rms_xyt": {
-"Name": "Spatio-Temporal Root Mean Square",
-"Abstract": "Compute Spatial and Temporal Root Mean Square",
-"URI": "http://uvcdat.llnl.gov/documentation/utilities/utilities-2.html",
-"Contact": "pcmdi-metrics@llnl.gov"
-},
+        "rms_xyt": {
+            "Name": "Spatio-Temporal Root Mean Square",
+            "Abstract": "Compute Spatial and Temporal Root Mean Square",
+            "URI": "http://uvcdat.llnl.gov/documentation/utilities/utilities-2.html"
+        },
     },
     "region": {
         "Global": {},
         "TROPICS": {
-                "generator": "cdutil.region.domain(latitude=(-30.0, 30))"
-            }
+            "generator": "cdutil.region.domain(latitude=(-30.0, 30))"
+        }
     }
 },
 ```
@@ -339,4 +315,4 @@ The strings for each child key may contain a double colon (::) delimiter, which 
 },
 ```
 
-LLNL-WEB-836141
+Release number: LLNL-WEB-836141
