@@ -48,7 +48,7 @@ If compiled code is used, a robust build system should be provided.  Compiled co
 
 The completed DEM should be registered with one or more Digital Object Identifiers (DOIs). This also applies to PODs that are merged into the MDTF framework source code. A service such as [Zenodo](https://zenodo.org/) can be used to obtain DOIs for software. 
 
-A Digital Object Identifier does not need to point to a specific version of source code. We will distinguish between "concept" DOIs, which apply to any and all versions of the source code, and "version" DOIs, which apply to a single, specific version of the source code. This is the system used by [Zenodo](https://zenodo.org/) (see their [Frequently Asked Questions](https://help.zenodo.org/) page for their usage).
+A Digital Object Identifier does not need to point to a specific version of source code. We will distinguish between "concept" DOIs, which apply to any and all versions of the source code, and "version" DOIs, which apply to a single, specific version of the source code. This is the system used by [Zenodo](https://zenodo.org/) (see Zenodo's [Frequently Asked Questions](https://help.zenodo.org/) page for their usage).
 
 At a minimum, the DEM should have a "concept" DOI that applies to any and all version of the software. The DEM may also have version specific DOIs. If a POD has any version specific DOIs, there must be a DOI for the version that is merged into the MDTF source code.
 
