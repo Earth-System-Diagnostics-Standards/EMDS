@@ -274,7 +274,7 @@ The following is an example of the DIMENSIONS key from the PCMDI Metrics Package
     }
 },
 ```
-Developers should consider minimizing the number of dimensions used for compatibility with visualization tools and general ease-of-use. 
+Developers should consider minimizing the number of dimensions used for compatibility with visualization tools and general ease of use. 
 
 ### RESULTS <a name="results"></a>
 
