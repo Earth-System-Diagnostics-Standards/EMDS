@@ -46,7 +46,7 @@ If compiled code is used, a robust build system should be provided.  Compiled co
 
 ### Digital Object Identification <a name="doi"></a>
 
-The DEM developer should register the DEM for a Digital Object Identifiers (DOIs). This includes PODs that are merged into the MDTF framework source code. A service such as [Zenodo](https://zenodo.org/) can be used to obtain DOIs for software. 
+The DEM developer should register the DEM for a Digital Object Identifiers (DOI). This includes PODs that are merged into the MDTF framework source code. A service such as [Zenodo](https://zenodo.org/) can be used to obtain DOIs for software. 
 
 A Digital Object Identifier for your DEM does not need to point to a specific version of source code. We will distinguish between "concept" DOIs, which apply to any and all versions of the source code, and "version" DOIs, which apply to a single, specific version of the source code. This is the system used by [Zenodo](https://zenodo.org/) (see Zenodo's [Frequently Asked Questions](https://help.zenodo.org/) page for their usage).
 
