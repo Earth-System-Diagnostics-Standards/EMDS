@@ -5,9 +5,9 @@ Authors are presented in order of last name:
 
 Chih-Chieh Chen, National Center for Atmospheric Research  
 Dani Coleman, National Center for Atmospheric Research  
-Tom Jackson, NOAA Geophysical Fluid Dynamics Laboratory   
+Tom Jackson, Science Applications International Corporation  
 John Krasting, NOAA Geophysical Fluid Dynamics Laboratory  
-Yi-Hung Kuo, NOAA Geophysical Fluid Dynamics Laboratory 
+Yi-Hung Kuo, NOAA Geophysical Fluid Dynamics Laboratory  
 Jessica Liptak, NOAA Geophysical Fluid Dynamics Laboratory  
 David Neelin, University of California Los Angeles  
 Ana Ordonez, Lawrence Livermore National Laboratory   
