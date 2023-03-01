@@ -1,7 +1,7 @@
 # Earth System Metrics and Diagnostics Standards (EMDS)
 
 ## Author list
-Authors are presented in order of last name:  
+Authors are presented in order of last name, with their affiliation at the time of contribution.  
 
 Chih-Chieh Chen, National Center for Atmospheric Research  
 Dani Coleman, National Center for Atmospheric Research  
