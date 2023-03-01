@@ -1,7 +1,10 @@
 # Earth System Metrics and Diagnostics Standards (EMDS)
 
 ## Author list
-Authors are presented in order of last name, with their affiliation at the time of contribution.  
+Lead author  
+Ana Ordonez, Lawrence Livermore National Laboratory  
+
+The following authors are presented in order of last name, with their affiliation at the time of contribution:   
 
 Chih-Chieh Chen, National Center for Atmospheric Research  
 Dani Coleman, National Center for Atmospheric Research  
@@ -12,8 +15,7 @@ Yi-Hung Kuo, NOAA Geophysical Fluid Dynamics Laboratory
 Jessica Liptak, NOAA Geophysical Fluid Dynamics Laboratory  
 Eric Maloney, Colorado State University  
 Elizabeth Maroon, University of Wisconsin-Madison  
-David Neelin, University of California Los Angeles  
-Ana Ordonez, Lawrence Livermore National Laboratory   
+David Neelin, University of California Los Angeles   
 Aparna Radhakrishnan, Princeton University CIMES  
 Paul Ullrich, University of California Davis   
 
