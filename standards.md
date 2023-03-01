@@ -5,7 +5,7 @@ Authors are presented in order of last name, with their affiliation at the time 
 
 Chih-Chieh Chen, National Center for Atmospheric Research  
 Dani Coleman, National Center for Atmospheric Research  
-Tom Jackson, Science Applications International Corporation  
+Thomas Jackson, Science Applications International Corporation  
 John Krasting, NOAA Geophysical Fluid Dynamics Laboratory  
 Yi-Hung Kuo, NOAA Geophysical Fluid Dynamics Laboratory  
 Jessica Liptak, NOAA Geophysical Fluid Dynamics Laboratory  
