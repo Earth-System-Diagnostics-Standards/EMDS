@@ -1,30 +1,34 @@
 # Earth System Metrics and Diagnostics Standards (EMDS)
 
 ## Author list
-Authors are presented in order of last name:  
+Authors are presented in order of last name, with their affiliation at the time of contribution.  
 
 Chih-Chieh Chen, National Center for Atmospheric Research  
 Dani Coleman, National Center for Atmospheric Research  
-Tom Jackson, NOAA Geophysical Fluid Dynamics Laboratory   
+Thomas Jackson, Science Applications International Corporation  
 John Krasting, NOAA Geophysical Fluid Dynamics Laboratory  
-Yi-Hung Kuo, University of California Los Angeles  
+Yi-Hung Kuo, NOAA Geophysical Fluid Dynamics Laboratory  
 Jessica Liptak, NOAA Geophysical Fluid Dynamics Laboratory  
 David Neelin, University of California Los Angeles  
 Ana Ordonez, Lawrence Livermore National Laboratory   
-Aparna Radhakrishnan, Princeton University/NOAA Geophysical Fluid Dynamics Laboratory  
+Aparna Radhakrishnan, Princeton University CIMES  
 Paul Ullrich, University of California Davis   
 
 
 ## Table of Contents
 1. [Best Practices](#bestpractices)
-2. [DEM Framework File Format](#demframework)
+    1. [Nomenclature](#nomenclature)
+    2. [Supported Languages](#languages)
+    3. [Python Versions](#py_version)
+    4. [Digital Object Identification](#doi)
+3. [DEM Framework File Format](#demframework)
     1. [Settings file](#settingsfile)
     2. [Contents file](#contentsfile)
-3. [Runtime Environment](#runtimeenvironment)
-4. [Common Output Bundle Format](#commonoutput)
-5. [Observational Data Format](#obsdataformat)
-6. [Observational Data Server](#obsdataserver)
-7. [Common Metric Output Format](#commonmetric)
+4. [Runtime Environment](#runtimeenvironment)
+5. [Common Output Bundle Format](#commonoutput)
+6. [Observational Data Format](#obsdataformat)
+7. [Observational Data Server](#obsdataserver)
+8. [Common Metric Output Format](#commonmetric)
     1. [DIMENSIONS](#dimensions)
     2. [RESULTS](#results)
 
@@ -38,6 +42,16 @@ In this document we refer to [MDTF](https://mdtf-diagnostics.readthedocs.io/en/l
 It is recommended that DEMs are developed in languages that are portable, flexible, and unrestricted. Python generally meets these requirements, and frameworks based on the EMDS standards may require the use of Python. That being said, any routine that enables command line execution of the DEM (with a single executable driver script per configuration; see "DEM Framework File Format: Settings file" below) can be made to work under these standards.
 
 If compiled code is used, a robust build system should be provided.  Compiled code should minimally rely on third-party dependencies and/or should be available through a conda package.
+
+
+### Digital Object Identification <a name="doi"></a>
+
+The DEM developer should register the DEM for a Digital Object Identifiers (DOI). This includes PODs that are merged into the MDTF framework source code. A service such as [Zenodo](https://zenodo.org/) can be used to obtain DOIs for software. 
+
+A Digital Object Identifier for your DEM does not need to point to a specific version of source code. We will distinguish between "concept" DOIs, which apply to any and all versions of the source code, and "version" DOIs, which apply to a single, specific version of the source code. This is the system used by [Zenodo](https://zenodo.org/) (see Zenodo's [Frequently Asked Questions](https://help.zenodo.org/) page for their usage).
+
+At a minimum, the DEM should have a "concept" DOI that applies to any and all version of the software. The DEM may also have version specific DOIs. If a POD has any version specific DOIs, there must be a DOI for the version that is merged into the MDTF source code.
+
 
 ## DEM Framework File Format <a name="demframework"></a>
 
