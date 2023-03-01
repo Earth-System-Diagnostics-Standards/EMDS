@@ -315,4 +315,39 @@ The strings for each child key may contain a double colon (::) delimiter, which 
 },
 ```
 
+## Governance
+
+Steering committee members: Ana Ordonez, Aparna Radhakrishnan, J. David Neelin, John Krasting, Paul Ullrich, Jessica Liptak,
+ 
+### Procedure for proposing new changes to the standards
+ 
+Changes should be made in a new branch in a personal fork of the EMDS repository. The branch should have a descriptive and unique name. A pull request (PR) can be opened from that branch when the changes are ready to be proposed. Draft PRs are permitted and should be marked as a draft in GitHub.
+ 
+The pull request must include a description that addresses these two points:
+1.     An explanation of why the change is being made
+2.     Any expected backwards compatibility issues
+ 
+An email must be sent to the EMDS team to notify them of the proposal. The PR author may tag reviewers on the PR. The PR must be approved by all members of the steering committee before it can be merged. All comments left on the pull request must be addressed before merging. The PR should be merged by a member of the steering committee who is not the original author of the PR.
+ 
+### Adding new members
+ 
+Individuals who wish to be added to the Earth-Systems-Diagnostics-Standards organization on GitHub can contact the EMDS steering committee by email with their request.
+ 
+Individuals who wish to join the EMDS steering committee can contact the EMDS steering committee by email with their request.
+ 
+The EMDS steering committee can invite individuals to join the steering committee and the EMDS organization on GitHub. New members can be added to the steering committee by a consensus vote.
+ 
+Granting new “Owner” privileges to a member of the organization should not be done without the knowledge and approval of the steering committee. The EMDS organization should have at least two members with “Owner” privileges at any time.
+ 
+### Removing members
+ 
+Members of the EMDS organization on GitHub are free to leave the organization at any time. The organization Owners have the ability to remove members from EMDS on GitHub. Owners should not remove members from EMDS without majority approval of the steering committee. Exceptions are allowed for emergency situations.
+ 
+Members of the EMDS steering committee are free to leave the steering committee at any time. Members of the steering committee can be expelled by a majority vote of the steering committee.
+ 
+### Votes
+ 
+A simple majority of the steering committee is required for a quorum. A vote may be conducted in-person, via a virtual conference, or via a voting tool such as Google Forms.
+
+
 Release number: LLNL-WEB-836141
