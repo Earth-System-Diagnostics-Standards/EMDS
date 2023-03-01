@@ -5,10 +5,13 @@ Authors are presented in order of last name, with their affiliation at the time 
 
 Chih-Chieh Chen, National Center for Atmospheric Research  
 Dani Coleman, National Center for Atmospheric Research  
+Andrew Gettelman, National Center for Atmospheric Research  
 Thomas Jackson, Science Applications International Corporation  
 John Krasting, NOAA Geophysical Fluid Dynamics Laboratory  
 Yi-Hung Kuo, NOAA Geophysical Fluid Dynamics Laboratory  
 Jessica Liptak, NOAA Geophysical Fluid Dynamics Laboratory  
+Eric Maloney, Colorado State University  
+Elizabeth Maroon, University of Wisconsin-Madison  
 David Neelin, University of California Los Angeles  
 Ana Ordonez, Lawrence Livermore National Laboratory   
 Aparna Radhakrishnan, Princeton University CIMES  
