@@ -333,7 +333,7 @@ An email must be sent to the EMDS team to notify them of the proposal. The PR au
  
 Individuals who wish to be added to the Earth-Systems-Diagnostics-Standards organization on GitHub can contact the EMDS steering committee by email with their request.
  
-Individuals who wish to join the EMDS steering committee can contact the EMDS steering committee by email with their request.
+Individuals who wish to join the EMDS steering committee can contact the EMDS steering committee by email with their request. Individuals wishing to volunteer should have familiarity with relevant diagnostics and metrics frameworks and/or be participating in the relevant model diagnostics communities.  
  
 The EMDS steering committee can invite individuals to join the steering committee and the EMDS organization on GitHub. New members can be added to the steering committee by a consensus vote.
  
