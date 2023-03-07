@@ -328,8 +328,8 @@ Steering committee members: Ana Ordonez, Aparna Radhakrishnan, J. David Neelin, 
 Changes should be made in a new branch in a personal fork of the EMDS repository. The branch should have a descriptive and unique name. A pull request (PR) can be opened from that branch when the changes are ready to be proposed. Draft PRs are permitted and should be marked as a draft in GitHub.
  
 The pull request must include a description that addresses these two points:
-1.     An explanation of why the change is being made
-2.     Any expected backwards compatibility issues
+1. An explanation of why the change is being made
+2. Any expected backwards compatibility issues
  
 An email must be sent to the EMDS team to notify them of the proposal. The PR author may tag reviewers on the PR. The PR must be approved by all members of the steering committee before it can be merged. All comments left on the pull request must be addressed before merging. The PR should be merged by a member of the steering committee who is not the original author of the PR.
  
