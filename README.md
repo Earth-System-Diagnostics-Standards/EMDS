@@ -5,5 +5,11 @@ The Earth System Metrics and Diagnostics Standards serve as a guidance document 
 ## Standards document
 The Earth System Metrics and Diagnostics Standards can be accessed in this repository at [standards.md](standards.md). 
 
+## Background and aims
+The Earth System Metrics and Diagnostics Standards arose from a collaboration on common standards between the National Oceanic and Atmospheric Administration Model Diagnostic Task Force (MDTF) https://www.gfdl.noaa.gov/mdtf-diagnostics and the Department of Energy Coordinated Model Evaluation Capabilities (CMEC) effort https://cmec.llnl.gov/. The MDTF-CMEC coordination has been a bottom-up scientific collaboration, initiated in 2019 by P. Ullrich (CMEC) and D. Neelin (MDTF), recognizing the usefulness of a common standard and design commonalities that facilitate this. 
+
+The EMDF aims to foster interoperability of climate and weather model evaluation tools across agencies and among research groups, facilitating the flow of diagnostics from process research to improvement of climate models and helping to create a natural continuum between performance metrics and process oriented diagnostics. Outreach to additional agencies with related model evaluation requirements is underway.
+
+
 ## Projects
 Projects that make use of these standards include [Coordinated Model Evaluation Capabilities (CMEC)](https://cmec.llnl.gov/) and [NOAA Model Diagnostics Task Force (MDTF)](https://www.gfdl.noaa.gov/mdtf-diagnostics/).
