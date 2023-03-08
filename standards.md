@@ -321,7 +321,7 @@ The strings for each child key may contain a double colon (::) delimiter, which 
 
 ## Governance <a name="governance"></a>
 
-Steering committee members: Ana Ordonez, Aparna Radhakrishnan, J. David Neelin, John Krasting, Paul Ullrich, Jessica Liptak,
+Steering committee members: Ana Ordonez, Aparna Radhakrishnan, J. David Neelin, John Krasting, Paul Ullrich, Jessica Liptak
  
 ### Procedure for proposing new changes to the standards <a name="gov_new_stan"></a>
  
@@ -331,13 +331,13 @@ The pull request must include a description that addresses these two points:
 1. An explanation of why the change is being made
 2. Any expected backwards compatibility issues
  
-An email must be sent to the EMDS team to notify them of the proposal. The PR author may tag reviewers on the PR. The PR must be approved by all members of the steering committee before it can be merged. All comments left on the pull request must be addressed before merging. The PR should be merged by a member of the steering committee who is not the original author of the PR.
+The PR author should tag 1-2 reviewers on the PR. The PR must be approved by all members of the steering committee before it can be merged. All comments left on the pull request must be addressed before merging. The PR should be merged by a member of the steering committee who is not the original author of the PR.
  
 ### Adding new members <a name="gov_new_mem"></a>
  
 Individuals who wish to be added to the Earth-Systems-Diagnostics-Standards organization on GitHub can contact the EMDS steering committee by email with their request.
  
-Individuals who wish to join the EMDS steering committee can contact the EMDS steering committee by email with their request. Individuals wishing to volunteer should have familiarity with relevant diagnostics and metrics frameworks and/or be participating in the relevant model diagnostics communities.  
+Individuals who wish to join the EMDS steering committee can open an issue with their request. Individuals wishing to volunteer should have familiarity with relevant diagnostics and metrics frameworks and/or be participating in the relevant model diagnostics communities.  
  
 The EMDS steering committee can invite individuals to join the steering committee and the EMDS organization on GitHub. New members can be added to the steering committee by a consensus vote.
  
@@ -354,4 +354,5 @@ Members of the EMDS steering committee are free to leave the steering committee 
 A simple majority of the steering committee is required for a quorum. A vote may be conducted in-person, via a virtual conference, or via a voting tool such as Google Forms.
 
 
+## Release number
 Release number: LLNL-WEB-836141
