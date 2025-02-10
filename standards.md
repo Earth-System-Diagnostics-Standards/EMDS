@@ -281,7 +281,7 @@ The following is an example of the DIMENSIONS key from the PCMDI Metrics Package
         "region",
         "model",
         "metric"
-    ]
+    ],
     "metric": {
         "rms_xyt": {
             "Name": "Spatio-Temporal Root Mean Square",
@@ -295,7 +295,7 @@ The following is an example of the DIMENSIONS key from the PCMDI Metrics Package
             "generator": "cdutil.region.domain(latitude=(-30.0, 30))"
         }
     }
-},
+}
 ```
 Developers should consider minimizing the number of dimensions used for compatibility with visualization tools and general ease of use. 
 
